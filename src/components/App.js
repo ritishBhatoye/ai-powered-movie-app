@@ -1,11 +1,22 @@
 import React from 'react';
-
-const App = () => {
+import {CssBaseline} from '@mui/material';
+import {Route,Routes} from 'react-router-dom';
+function App() {
   return (
     <div>
-      <h1>Hi</h1>
+    <CssBaseline/>
+    <main>
+    <Routes>
+      <Route path='/'>
+        <h1>Home</h1>
+      </Route>
+      <Route path='/movies'>
+        <h1>Movies</h1>
+      </Route>
+      </Routes>
+      </main>
     </div>
-  )
+  );
 }
 
 export default App;
